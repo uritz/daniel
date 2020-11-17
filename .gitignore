@@ -1,0 +1,10 @@
+node_modules
+
+*~
+*#
+.DS_STORE
+Thumbs.db
+.netbeans
+nbproject
+.idea
+.node_history
