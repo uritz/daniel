@@ -15,7 +15,7 @@ let router = express.Router();
 app.use(require('cookie-parser')());
 
 app.get('/', function(req, res) {
-    res.sendFile('vp_dash.html', { root: __dirname + "/static/" });
+    res.sendFile('matrix.html', { root: __dirname + "/static/" });
 });
 
 app.use("/api", router);

@@ -1,0 +1,18 @@
+#matrix-table {
+    width: 100%;
+    max-width: 100%;
+    border-spacing: 0px;
+}
+
+#matrix-table th,
+#matrix-table td {
+    text-align: center;
+    padding: 0.75rem;
+    border: 1px solid #dee2e6;
+}
+
+.header-cell {
+    background-color: #ededee;
+}
+
+.game-cell {}
