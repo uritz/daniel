@@ -15,4 +15,20 @@
     background-color: #ededee;
 }
 
+.header-top {
+    border-bottom: 2px solid black !important;
+}
+
+.header-left {
+    border-right: 2px solid black !important;
+}
+
+.header-right {
+    border-left: 2px solid black !important;
+}
+
+.active-base {
+    border-top: 2px solid red !important;
+}
+
 .game-cell {}
