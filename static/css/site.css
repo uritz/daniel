@@ -31,4 +31,17 @@
     border-top: 2px solid red !important;
 }
 
+.fail-cell {
+    background-color: red;
+}
+
 .game-cell {}
+
+.div-title {
+    text-align: center;
+}
+
+.div-actions {
+    text-align: center;
+    margin-top: 20px;
+}

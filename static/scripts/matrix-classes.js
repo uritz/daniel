@@ -1,7 +1,13 @@
 class Ball {
-    constructor(row, column) {
-        this.row = row;
-        this.column = column;
+    constructor() {
+        this.row;
+        this.column;
+        this.init();
+    }
+
+    init() {
+        this.row = 0;
+        this.column = Math.floor(Math.random() * cols - 1);
     }
 
     draw() {
@@ -10,6 +16,10 @@ class Ball {
 
         $(`#${this.row}_${this.column}`).text('*');
         $(`#${this.row}_${this.column}`).addClass('active-cell');
+    }
+
+    failed() {
+        $(`#${this.row+1}_${this.column}`).addClass('fail-cell');
     }
 }
 
@@ -35,4 +45,21 @@ class Base {
         $(`.active-base`).removeClass('active-base');
         $(`#${this.max_rows}_${this.column}`).addClass('active-base');
     }
+}
+
+class Score {
+    constructor() {
+        this.points;
+    }
+
+    init() {
+        this.points = 0;
+        this.add_points(0);
+    }
+
+    add_points(points) {
+        this.points += points;
+        $(`#points`).text(this.points);
+    }
+
 }

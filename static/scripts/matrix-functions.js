@@ -1,15 +1,15 @@
 'use strict';
 
-var cols = 10,
-    rows = 10,
+var cols = 31,
+    rows = 30,
     baseLocation = 5,
-    ball = new Ball(0, 5),
-    base = new Base(5, rows, cols);
+    ball = new Ball(),
+    base = new Base(5, rows, cols),
+    score = new Score();
 
 $(function() {
     fillTable();
     base.move_right();
-    main();
 });
 
 function fillTable() {
